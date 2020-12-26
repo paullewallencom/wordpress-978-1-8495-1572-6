@@ -1,0 +1,17 @@
+/* 6. Mobile */
+/*iPads in landscape mode*/
+@media screen and (max-width: 768px) {
+	#access {
+		font-size: 18px;
+	}
+}
+
+/*smartphones in landscape mode*/
+@media screen and (max-width: 480px) {
+
+}
+
+/*smartphones in portrait mode*/
+@media screen and (max-width: 320px) {
+
+}

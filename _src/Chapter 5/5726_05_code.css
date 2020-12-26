@@ -1,0 +1,81 @@
+/* code to alter the layout of the menu for phones in both modes */
+/*smartphones in landscape mode*/
+@media screen and (max-width: 480px) {
+	/* adjust menu layout */
+	.access {
+		background: none;
+	}
+	.access a {
+ 		display: block;
+		margin: 5px 0;
+		background: #ccfeff;
+ 		padding: 10px 0;
+ 	}
+ }
+ 
+ /*html structure for desktop and mobile versiosn of menu */
+ /*In header.php: */
+ <nav class="access desktop">
+	<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+</nav><!-- .access -->
+/*In footer.php:*/
+<nav class="access mobile">
+	<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+</nav><!-- #access -->
+
+
+ 
+ /*css to move the position of the navigation menu on phones, and add a link to it in the header */
+ /*in main part of stylesheet*/
+ .access.desktop {
+	display: block;
+}
+.access.mobile {
+	display: none;
+}
+
+ 
+ /*smartphones in landscape mode*/
+@media screen and (max-width: 480px) {
+	.access.desktop {
+		display: none;
+	}
+	.access.mobile {
+	display: block;
+	}
+	.menu-link, a.menu-anchor {
+		display: block;
+	}
+	.menu-link a {
+		margin: 5px 0;
+		background: #ccfeff;
+ 		padding: 20px 0;
+ 		font-size: 1.15em;
+		line-spacing: 0;
+ 		height: 17px;
+		text-align: center;
+		text-decoration: none;
+	}
+	.menu-link a:link,
+	.menu-link a:visited {
+		color: #117679;
+	}
+	.menu-link a:hover,
+	.menu-link a:active {
+		color: #0CF;
+	}
+	a.menu-anchor {
+		height: 0;
+	padding: 0;
+	margin: 0;
+	}
+}
+
+/*css to hide the menu link and anchor on larger screens */
+.menu-link, a.menu-anchor {
+	display: none;
+}
+
+/*html to create the menu link and anchor */
+<nav class="menu-link"><a href="#menu">Menu</a></nav><!--goes above the .container div-->
+<a class="menu-anchor" name="menu"></a><!--goes inside the #access menu but above the links inside it-->

@@ -1,0 +1,20 @@
+Code for making images responsive using CSS
+
+Universal code:
+/*image resizing for responsive layout*/
+img {
+	max-width: 100%;
+}
+
+
+Giving narrower images a percentage width
+
+#banner-pics img {
+	width: 32%;
+	margin: 10px 2% 0;
+	height: auto;
+	float: left;
+}
+#banner-pics img.right {
+	margin-right: 0;
+}

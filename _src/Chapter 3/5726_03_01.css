@@ -1,0 +1,100 @@
+/* main layout */
+html {	
+	margin: 0;
+}
+body {
+	margin: 20px auto;
+	width: 940px;
+	padding: 10px;
+}
+
+/* Structure the header */
+header {
+	padding: 0;
+}
+#site-title {
+	width: 330px;
+	clear: none;
+	float: left;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+#site-title img {
+	width: 200px;
+}
+#header-right {
+	width: 560px;
+	float: right;
+}
+#header-right address {
+	clear: right;
+	float: right;
+	text-align: right;
+}
+#header-right img {
+	float: right;
+	height: 30px;
+	margin: 10px 0 10px 10px;
+}
+#header-right .CTA {
+	clear: right;
+	float: right;
+	padding: 20px 20px 20px 40px;
+	margin: 20px 0;
+	font-size: 1.5em;
+	position: relative;
+}
+#header-right .CTA img {
+	position: absolute;
+	top: -20px;;
+	left: -30px;
+	width: 180px;
+	height: auto;
+}
+#access {
+	display: block;
+	float: left;
+	margin: 20px 0 0 0;
+	width: 920px;
+	font-size: 16px;
+}
+
+/*Structure the content*/
+#main {
+	clear: both;
+	padding: 20px 0 0 0;
+}
+#content {
+	float: left;
+	width: 600px;
+}
+/*alternative styling for pages with no sidebar*/
+.page-template-onecolumn-page-php #content, .single-attachment #content {
+	float: none;
+	width: 920px;
+}
+
+/* Structure the sidebars */
+#primary,
+#secondary {
+	float: right;
+	width: 300px;
+}
+#secondary {
+	clear: right;
+}
+
+
+/* Structure the footer area */
+footer {
+	clear: both;
+}
+#copyright {
+	float: left;
+	width: 470px;
+}
+#credits {
+	float: right;
+	width: 470px;
+}

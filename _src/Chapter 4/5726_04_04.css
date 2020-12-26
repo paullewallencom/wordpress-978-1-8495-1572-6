@@ -1,0 +1,111 @@
+/*iPads in portrait mode*/
+@media screen and (max-width: 768px) {
+	#site-title img {
+		width: 75%;
+	}
+	#socialmedia img {
+		height: 25px;
+		margin: 7px 0 7px 10px;
+	}
+	#header-right .CTA {
+		padding: 0.8em;
+		padding-left: 40px;
+	}
+	#access {
+		font-size: 18px;
+	}
+	#content, #primary {
+		width: 100%;
+		float: none;
+	}
+	#primary .widget-container {
+		width: 49%;
+		float: left;
+		margin-right: 2%;
+	}
+	#primary .widget-container:last-child {
+		margin-right: 0;
+	}
+	#primary #text-2 img {
+		width: 100%;
+	}
+}
+
+/*smartphones in landscape mode*/
+@media screen and (max-width: 480px) {
+	/*tidy up the header*/
+	#site-title img {
+		width: 75%;
+	}
+	#header-right address h2 {
+		font-size: 16px;
+		margin-top: -0.2em;
+	} 
+	#header-right #socialmedia img {
+		height: 20px;
+		margin: 5px 1% 0 0;
+	}
+	#header-right .CTA {
+		width: 130%;
+		font-size: 16px;
+		padding: 0.8em 0.8em 0.8em 40px;
+		margin: 20px 3% 5px 0;
+	}
+	#header-right .CTA img {
+		width: 15%;
+	}
+	/*navigation bar*/
+	#access {
+		font-size: 14px;
+		text-align: center;
+		margin-top: 10px;
+	}
+	#access a {
+		line-height: 2.5em;
+		display: inline;
+	}
+	#access .menu-header li, div.menu li {
+		float: none;
+		display: inline;
+	}
+	#primary #search-2 input[type="submit"] {
+		margin-top: 10px;
+	}
+	/*change footer layout*/
+	#colophon small {
+		width: 100%;
+		text-align: left;
+	}
+}
+/*smartphones in portrait mode*/
+@media screen and (max-width: 320px) {
+	/*make header icons and text larger*/
+	#header-right address h2 {
+		font-size: 1.4em;
+	} 
+	#header-right #socialmedia img {
+		height: 30px;
+		margin: 10px 3%;
+	}
+	#header-right .CTA {
+		font-size: 18px;
+		/*padding: 1em 1em 1em 40px;*/
+		margin: 10px 3% 10px 0;
+	} 
+	/*increase size of navigation text*/
+	#access {
+		font-size: 17px;
+	}
+	#access a {
+		padding: 0 7px;
+	}
+	/*adjust sidebar layout*/
+	#primary .widget-container {
+		width: 100%;
+		float: none;
+		margin: 15px 0;
+	}	
+	#primary #search-2 input[type="submit"] {
+		margin-top: 0;
+	}
+}

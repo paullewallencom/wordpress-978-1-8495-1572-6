@@ -1,0 +1,127 @@
+CSS to set up a responsive web app
+
+1. Adjusting the header layout
+
+New styling:
+/* header layout for responsive web app */
+	#site-title {
+		width: 100%;
+	}
+	#site-title img {
+		width: 30%;
+	}
+	#site-description {
+		position: relative;
+		float: right;
+		width: 60%;
+		text-align: right;
+		left: 0;
+	}
+	#header-right {
+		width: 100%;
+		clear: both;
+		margin-top: 10px;
+	}
+	#header-right address h2 {
+		width: 100%;
+		text-align: center;
+		font-size: 0.8em;
+	}
+	#header-right #socialmedia img {
+		position: absolute;
+		height: 30px;
+		bottom: 40px;
+	}
+	#header-right #socialmedia img.twitter {
+		left: 20px;
+	}
+	#header-right #socialmedia img.facebook {
+		right: 20px;
+	}
+
+New styling merged into existing styling in stylesheet:
+#site-title {
+		width: 100%;
+	}
+	#site-title img {
+		width: 30%;
+	}
+	#site-description {
+		position: relative;
+		float: right;
+		width: 60%;
+		text-align: right;
+		left: 0;
+	}
+	#header-right {
+		width: 100%;
+		clear: both;
+		margin-top: 10px;
+	}
+	#header-right address h2 {
+		width: 100%;
+		text-align: center;
+		font-size: 0.8em;
+		margin-top: -0.2em;
+	}
+	#header-right #socialmedia img {
+		position: absolute;
+		height: 30px;
+		bottom: 40px;
+	}
+	#header-right #socialmedia img.twitter {
+		left: 20px;
+	}
+	#header-right #socialmedia img.facebook {
+		right: 20px;
+	}
+
+2. CSS for the buttons:
+New styling:
+	.access li {
+		width: 100%;
+		margin: 15px 0;
+	}
+	.access a {	
+		background: #0cf;
+		border-radius: 5px;
+		color: #fff;
+		height: 50px;
+		font-size: 20px;
+	}
+	.access ul li.current_page_item > a {
+		color: #fff;
+	}
+
+Styling merged in with existing code:
+	.access {
+		background: none;
+ 	}
+	.access li {
+		width: 100%;
+		margin: 15px 0;
+	}
+	.access a {	
+		background: #0cf;
+		border-radius: 5px;
+		color: #fff;
+		height: 50px;
+		font-size: 20px;
+		display: block;
+		margin: 5px 0;
+ 		padding: 10px 0;
+		line-spacing: 0;
+ 		height: 37px;
+	}
+	.access ul li.current_page_item > a {
+		color: #fff;
+	}
+
+3. CSS for the footer:
+	footer {
+		padding-top: 20px;
+	}
+	#colophon small {
+		font-size: 10px;
+		line-height: 1.2em;
+	}

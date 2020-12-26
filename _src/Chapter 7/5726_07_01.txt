@@ -1,0 +1,63 @@
+Code for making images responsive using CSS
+
+Universal code:
+/*image resizing for responsive layout*/
+img {
+	max-width: 100%;
+}
+
+
+Giving narrower images a percentage width
+starting code:
+#banner-pics img {
+	width: 295px;
+	margin: 10px 20px 0 0;
+	height: auto;
+	float: left;
+}
+#banner-pics img.right {
+	margin-right: 0;
+}
+
+final code:
+#banner-pics img {
+	width: 32%;
+	margin: 10px 2% 0;
+	height: auto;
+	float: left;
+}
+#banner-pics img.right {
+	margin-right: 0;
+}
+
+Code to add classes which apply to different devices.
+In main styling for desktop:
+.tablet, .mobile {
+	display: none;
+}
+.desktop { 
+	display: block;
+}
+
+In media query for tablets:
+.desktop, .mobile {
+	display: none;
+}
+.tablet { 
+	display: block;
+}
+
+In media query for smartphones:
+.desktop, .tablet {
+	display: none;
+}
+.mobile { 
+	display: block;
+}
+
+HTML for mobile link and anchor with new classes applied:
+<nav class="menu-link mobile"><a href="#menu">Menu</a></nav>
+<a class="menu-anchor mobile" name="menu"></a>
+
+
+

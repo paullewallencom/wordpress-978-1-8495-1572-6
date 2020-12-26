@@ -1,0 +1,67 @@
+/* main layout */
+html {	
+	margin: 0;
+}
+body {
+	margin: 20px auto;
+	width: 90%;
+	max-width: 940px;
+	padding: 10px 1%;
+}
+
+/* Structure the header */
+header {
+	padding: 0;
+}
+#site-title {
+	width: 35%;
+}
+#site-title img {
+	width: 60%;
+}
+#header-right {
+	width: 60%;
+}
+#header-right img {
+	height: 30px;
+	margin: 10px 0 10px 1%;
+}
+#header-right .CTA {
+	clear: right;
+	float: right;
+	padding: 20px 2% 20px 4%;
+	margin: 20px 0;
+}
+#header-right .CTA img {
+	top: -20px;;
+	left: -30px;
+	width: 20%;
+	height: auto;
+}
+#access {
+	margin: 20px 0 0;
+	width: 100%;
+}
+
+/*Structure the content*/
+#content {
+	width: 65%;
+}
+/*alternative styling for pages with no sidebar*/
+.page-template-onecolumn-page-php #content, .single-attachment #content {
+	width: 100%;
+}
+
+/* Structure the sidebars */
+#primary,
+#secondary {
+	width: 32%;
+}
+
+/* Structure the footer area */
+#copyright {
+	width: 50%;
+}
+#credits {
+	width: 50%;
+}

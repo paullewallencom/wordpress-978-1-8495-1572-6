@@ -1,0 +1,21 @@
+Creating a mobile theme for our web app - PHP and HTML added or edited in mobile theme
+
+Code to edit in the existing header.php file:
+Navigation menu - new code:
+<nav class="access">
+<?php wp_nav_menu( array( 'menu' => ‘web-app’, 'container_class' => 'menu-header', 'menu-class' => 'web-app-menu' ) ); ?>
+</nav>
+
+Call to action button - delete code:
+<?php if (!is_mobile()) { ?>
+	<div class="CTA">
+		<img src="<?php bloginfo('stylesheet_directory')?>/images/sundae-small.png" /><a src="">Order ice cream online</a>
+	</div>
+   <?php ; } else {
+ ;
+} ?>
+
+
+
+
+

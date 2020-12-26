@@ -1,0 +1,16 @@
+Code to style the new mobile menus
+
+Styling for top menu layout:
+#access #menu-mobile-top li {
+	width: 23.5%;
+	margin-left: 2%;
+	float: left;
+}
+#access #menu-mobile-top li:first-child {
+	margin-left: 0;
+}
+
+Styling to remove excess padding between the menu and content:
+#main {
+		padding: 5px;
+	}

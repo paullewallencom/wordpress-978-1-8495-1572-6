@@ -1,0 +1,25 @@
+Code for adding mobile-only menus to the site
+
+Starting code:
+<nav class="access">
+	<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+</nav><!-- .access -->
+
+Code to insert for the top menu:
+<?php wp_nav_menu( array( 'menu' => ‘mobile-top’, 'container_class' => 'menu-header', menu-class => ‘mobile-top-menu’ ) ); ?>
+
+Final code for top menu with the menu inserted and a conditional tag:
+<nav class="access">
+	<?php
+   		if ( is_mobile() ) {
+ 		wp_nav_menu( array( 'menu' => ‘mobile-top’, 'container_class' => 'menu-header', ‘menu-class’ => ‘mobile-top-menu’ ) );
+   		} else {
+ 		wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) );
+		} ?>
+</nav><!--.access -->
+
+Final code for bottom menu:
+</div><!-- #main -->
+<?php 
+	if ( is_mobile() ) { ?>		<nav class=”access”> 		<?php wp_nav_menu( array( 'menu' => ‘mobile-bottom’, 'container_class' => 'menu-header', ‘menu-class’ => ‘mobile-bottom-menu’ ) ); ?>		</nav><!--.access -->   	<?php } ?>
+

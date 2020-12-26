@@ -1,0 +1,69 @@
+/*1. Code to create two widgets side by side, using the second widget's unique id to reduce its margin*/
+
+	#primary .widget-container {
+		width: 49%;
+		float: left;
+		margin-right: 2%;
+	}
+#primary #text-2.widget-container {
+		margin-right: 0;
+	}
+
+
+/*2. Code to create two widgets side by side, using the :last-child psuedo-class to reduce the margin of the second widget*/
+	#primary .widget-container {
+		width: 49%;
+		float: left;
+		margin-right: 2%;
+	}
+	#primary .widget-container:last-child {
+		margin-right: 0;
+	}
+	
+	
+/*3. Code to create three widgets side by side, using the pseudo-class again.*/
+ 	#primary .widget-container {
+		width: 32%;
+		float: left;
+		margin-right: 2%;
+	}
+	#primary .widget-container:last-child {
+		margin-right: 0;
+	}
+	
+/*4. Code to create a block of widgets two widgets wide, using the id of the second widget to reduce its margin.*/
+  	#primary .widget-container {
+		width: 49%;
+		float: left;
+		margin-right: 2%;
+	}
+	#primary .widget-container: last-child,
+	#primary .widget-container#unique-id {
+		margin-right: 0;
+	}
+
+/*5. Code to create a block of widgets two widgets wide, without using :last-child or the id of any widgets.*/
+  	#main {
+     	overflow: hidden;
+  	}
+  	#primary {
+     	width: 102%;
+  	}
+  	#primary .widget-container {
+		width: 49%;
+		float: left;
+		margin-right: 2%;
+	}
+
+/*6. Similar code as in number 5 above, but applied to a fotter widget area instead of a sidebar*/
+	body {
+     	overflow: hidden;
+  	}
+  	footer {
+     	width: 102%;
+  	}
+  	footer .widget-area {
+		width: 49%;
+		float: left;
+		margin-right: 2%;
+	}
